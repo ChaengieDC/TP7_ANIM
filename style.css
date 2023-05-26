@@ -17,7 +17,7 @@ body{
     position: absolute;
 }
 .anim-1{
-    margin-left: 4vw;
+    margin-left: 40%;
     animation: animation-1 2s linear infinite alternate-reverse;
 }
 .anim-2{
