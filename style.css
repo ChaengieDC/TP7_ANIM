@@ -1,0 +1,69 @@
+body{
+    background-color: aquamarine;
+}
+
+.container{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+}
+
+.circle{
+    width: 40px;
+    height: 40px;
+    background-color: azure;
+    border-radius: 50%;
+    position: absolute;
+}
+.anim-1{
+    margin-left: 4vw;
+    animation: animation-1 2s linear infinite alternate-reverse;
+}
+.anim-2{
+    bottom: 0px;
+    animation: animation-2 2s linear infinite alternate-reverse;
+}
+.anim-3{
+    animation: animation-3 2s linear infinite alternate-reverse;
+}
+
+
+@keyframes animation-1{
+    0%{
+        transform: translate(0px);
+        background-color: rgb(243, 248, 167);
+    }
+    100%{
+        transform: translateY(160px);
+        background-color: rgb(255, 226, 60);
+    }
+}
+@keyframes animation-2{
+    0%{
+        transform: translate(0px);
+        background-color: rgb(194, 253, 255);
+    }
+    100%{
+        transform: translate(160px, -160px);
+        background-color: rgb(33, 192, 255);
+    }
+}
+@keyframes animation-3{
+    0%{
+        transform: translate(0px);
+        background-color: rgb(129, 94, 150);
+    }
+    30%{
+        transform: translate(160px, 0px);
+        background-color: rgba(91, 69, 145, 0.600);
+    }
+    70%{
+        transform: translate(0px, 160px);
+        background-color: rgba(152, 253, 157, 0.600);
+    }
+    100%{
+        transform: translate(160px, 160px);
+        background-color: rgb(114, 255, 33);
+    }
+}
